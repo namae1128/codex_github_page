@@ -42,9 +42,10 @@ python -m http.server 8000
 1. GitHub에 새 저장소를 만듭니다.
 2. 이 폴더를 `main` 브랜치 기준으로 push 합니다.
 3. GitHub 저장소의 `Settings > Pages`로 이동합니다.
-4. `Build and deployment`에서 `Deploy from a branch`를 선택합니다.
-5. Branch를 `main`, 폴더를 `/ (root)`로 설정하고 저장합니다.
-6. 배포가 완료되면 `https://username.github.io/repository-name/` 또는 사용자 사이트 주소에서 확인합니다.
+4. `Build and deployment`에서 `Source`를 `GitHub Actions`로 설정합니다.
+5. 저장소에 포함된 [.github/workflows/pages.yml](./.github/workflows/pages.yml) 워크플로가 `main` 브랜치 push 시 자동으로 배포를 진행합니다.
+6. `Actions` 탭에서 `Deploy GitHub Pages` 워크플로 실행 상태를 확인합니다.
+7. 배포가 완료되면 `https://username.github.io/repository-name/` 또는 사용자 사이트 주소에서 확인합니다.
 
 ## 후속 확장 아이디어
 
